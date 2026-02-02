@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valentine</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#fff;
+font-family:Arial;
+}
+
+.box{
+text-align:center;
+}
+
+img{
+width:250px;
+border-radius:10px;
+}
+
+h2{
+margin:20px 0;
+padding-bottom: 25px;
+}
+
+button{
+padding:10px 25px;
+font-size:18px;
+border:none;
+cursor:pointer;
+transition:0.3s;
+}
+
+#yes{
+color:black;
+}
+
+#no{
+color:black;
+margin-left:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG93aW51dWV0OWdlZ3Q1ZWUxdTlvdmZyajJ1bXpuZHEwZGFjajVsMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iFKDPGLl3k5hu/giphy.gif">
+
+    <h2>Will you be my valentine?</h2>
+
+    <a href="./valenitegift2.html"><button id="yes" onclick="yes()">Yes</button></a>
+    <button id="no" onclick="noClick()">No</button>
+
+</div>
+
+<script>
+
+    let yesSize = 1;
+    let noSize = 1;
+    let texts = ["No", "Are you sure?😄", "Are you sure you're sure?😅", "you better say yes😣", "baby pleaseeeee😟","please say yesssss","please"];
+    let count = 0;
+    
+    function noClick(){
+    yesSize += 0.2;
+    noSize -= 0.1;
+    
+    yes.style.transform = `scale(${yesSize})`;
+    no.style.transform = `scale(${noSize})`;
+    
+    count++;
+    
+    if(count < texts.length){
+    no.innerHTML = texts[count];
+    }
+    
+    if(noSize <= 0.3){
+    no.style.display = "none";
+    }
+    }
+    
+    function goPage2(){
+    document.getElementById("page1").style.display="none";
+    document.getElementById("page2").style.display="block";
+    }
+    
+    </script>
+
+</body>
+</html>
