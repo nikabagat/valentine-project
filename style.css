@@ -1,25 +1,3 @@
-.box {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .box {
-        display: block;
-    }
-}
-
-.desktop-msg {
-    display: none;
-    font-size: 28px;
-    text-align: center;
-}
-
-@media (min-width: 769px) {
-    .desktop-msg {
-        display: block;
-    }
-}
-
 body {
     margin: 0;
     height: 100vh;
@@ -56,8 +34,10 @@ button {
 
 #yes {
     color: black;
+    padding-left: 10px;
 }
 
 #no {
     color: black;
+    padding-right: 10px;
 }
