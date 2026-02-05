@@ -1,4 +1,4 @@
-/* .box {
+.box {
     display: none;
 }
 
@@ -18,7 +18,7 @@
     .desktop-msg {
         display: block;
     }
-} */
+}
 
 body {
     margin: 0;
@@ -41,9 +41,10 @@ img {
 
 h2 {
     margin: 20px 0;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     font-size: 24px;
 }
+
 
 button {
     padding: 10px 35px;
@@ -59,5 +60,4 @@ button {
 
 #no {
     color: black;
-    margin-left: 15px;
 }
