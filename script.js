@@ -12,7 +12,7 @@ noButton.addEventListener('click', () => {
 
     // 2. No ღილაკის დაპატარავება და გაქრობა
     noScale -= 0.15;
-    noOpacity -= 0.15;
+    // noOpacity -= 0.15;
 
     if (noScale > 0) {
         noButton.style.transform = `scale(${noScale})`;
